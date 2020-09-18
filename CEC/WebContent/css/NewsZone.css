@@ -1,0 +1,294 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*页面头部分*/
+
+body {
+	background-color: #EEEEEE;
+}
+
+
+/*头部分*/
+
+.head {
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .3);
+	/*设置边框阴影*/
+}
+
+
+/*头部居中层*/
+
+.head-middle {
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+
+/*头部分logo*/
+
+.head-logo {
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	font-size: 45px;
+	line-height: 50px;
+	color: #CEA861;
+	font-family: "arial, helvetica, sans-serif";
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+.head-logo span {
+	color: #B03060;
+}
+
+
+/*首页*/
+
+.head-list {
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	width: 70px;
+	text-align: center;
+	color: #B03060;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 50px;
+	margin-left: 50px;
+}
+
+.head-list:hover {
+	color: #fff;
+	background-color: #CEA861;
+}
+
+
+/*头像*/
+
+.head-login {
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	width: 250px;
+	float: right;
+	overflow: hidden;
+}
+
+
+/*头像图片*/
+
+.login-img {
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	width: 40px;
+	border-radius: 21px;
+	border: 2px solid #CEA861;
+	margin-top: 4px;
+}
+
+
+/*登录名称*/
+
+.user-name {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+	height: 50px;
+	width: 150px;
+	color: #CEA861;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 50px;
+}
+
+
+/*页面中间层*/
+
+.middle {
+	/*height: 700px;*/
+	margin-bottom: 30px;
+	/*border: 1px solid red;*/
+}
+
+.middle-box {
+	/*height: 600px;*/
+	width: 900px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+
+
+/*公告部分*/
+
+.zone {
+	margin-top: 20px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .3);
+	/*设置边框阴影*/
+	/*height: 600px;*/
+	width: 900px;
+}
+
+
+/*公告头部分*/
+
+.zone-head {
+	height: 150px;
+	width: 850px;
+	margin: 0 auto;
+	border-bottom: 2px solid #CEA861;
+}
+
+
+/*公告标题*/
+
+.zone-title {
+	display: inline-block;
+	margin-top: 50px;
+	color: #CEA861;
+}
+
+
+/*公告头部发帖信息*/
+
+.zone-palette {
+	height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
+	color: #aaa;
+	font-size: 14px;
+}
+
+
+/*发帖人名称*/
+
+.editor-name {
+	color: #B03060;
+	font-weight: bold;
+}
+
+
+/*发帖时间*/
+
+.editing-time {
+	margin-left: 30px;
+}
+
+
+/*公告显示盒子*/
+
+.news-show-box {
+	width: 900px;
+}
+
+
+/*公告显示*/
+
+.news-show {
+	width: 850px;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	color: #495057;
+	font-size: 14px;
+}
+
+
+/*页面页脚*/
+
+.foots {
+	height: 200px;
+	background-color: #e3e2e2;
+}
+
+
+/*页脚中间层*/
+
+.foots-middle {
+	width: 1400px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+
+/*页脚logo*/
+
+.foot-logo {
+	display: inline-block;
+	height: 100px;
+	width: 200px;
+	margin-top: 60px;
+	margin-left: 120px;
+}
+
+
+/*logo*/
+
+.foot-logos {
+	display: inline-block;
+	font-size: 50px;
+	color: #CEA861;
+	font-family: "arial, helvetica, sans-serif";
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+.foot-logos span {
+	color: #B03060;
+}
+
+.foot-text {
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	border-bottom: 2px solid #C5AB86;
+	font-size: 18px;
+	color: #CEA861;
+}
+
+
+/*页脚许可层*/
+
+.foot-copyright {
+	display: inline-block;
+	height: 120px;
+	width: 800px;
+	float: right;
+	margin-top: 40px;
+	color: #9f9378;
+}
+
+
+/*大字*/
+
+.foot-big-text {
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+
+/*小字*/
+
+.foot-small-text {
+	font-size: 10px;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/* CSS Document *{ margin:0; padding:0;}  */
+/**全局样式**/
+#page_head {
+	width: 100%;
+	max-height: 50px;
+	min-height: 40px;
+	padding-top: 1%;
+	padding-left: 7%;
+}
+
+/*****************************************登录 界面 样式***********************************/
+
+#login_Box {
+	width: 250px;
+	margin: auto;
+}
+
+.login_checkbox_a {
+	width: 18px;
+	height: 18px;
+}
+
+.login_checkbox {
+	height: 40px;
+	width: 100%;
+	margin-top: 8%;
+}
+
+.login_checkbox input {
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+.login_checkbox span {
+	display: block;
+	float: left;
+	line-height: 18px;
+	margin-right: 20px;
+}
+/*忘记密码*/
+.lgoin_wjmm {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+/*底部*/
+.login_bottom {
+	margin-top: 60%;
+	display: block;
+	text-align: center;
+	color: #8C8C8C;
+}
+
+
+/*****************************************注册  界面 样式***********************************/
+
+#register_box {
+	width: 250px;
+	margin: auto;
+}
+
+#register_box select {
+	height: 32px;
+	width: 120px;
+	padding-left: 8px;
+	border-radius: 4px;
+	border: 1px #CCCCCC solid;
+	color: #999999;
+}
+
+
+/****************************************** 主界面 *****************************************/
+/*body的背景颜色*/
+.body_back_color{
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	transition: all 1s ease 0s;
+}
+/*个人空间的头部*/
+#pzone_head {
+	width: 70%;
+	height: 240px;
+	margin: auto;
+	margin-bottom: 10px;
+	position: relative;
+	
+	transition: all 1s ease 0s;
+}
+/*空间头部部分 的头像*/
+#pzone_head .head_img {
+	position: absolute;
+	top: 25%;
+	max-width: 15%;
+	min-height: 15%;
+	border: 3px solid #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0px 5px 15px;
+}
+/*黑夜主题*/
+#black {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: all 0.5s ease 0s;
+}
+/*黎明主题*/
+#white{
+	position: absolute;
+	top: 0px;
+	right: 36px;
+	transition: all 0.5s ease 0s;
+}
+/*头部部分 个人信息*/
+#pzone_head .user_info {
+	position: absolute;
+	top: 25%;
+	left: 18%;
+	width: 82%;
+	height: 55%;
+}
+/*头部个人信息-修改个人信息的超链接*/
+.user_info .user_set {
+	float: right;
+	margin-right: 100px;
+	text-decoration: none;
+}
+/* 头部个人信息- 新消息提示*/
+.user_info #massage {
+	display: block;
+	width: 70px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+/*发表言论层*/
+.pzone_speech {
+	background: #f8f6f2;
+	width: 70%;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 12px;
+	box-shadow: 0px 0px 2px #FFFFFF;
+}
+/*发表言论的文本域样式*/
+.pzone_speech textarea {
+	margin-bottom: 3px;
+}
+/*发表按钮*/
+.speech_btn {
+	height: 32px;
+	width: 80px;
+	float: right;
+	color: white;
+	background: #269ABC;
+	border: none;
+	border-radius: 3px;
+}
+/*发表按钮 鼠标移入*/
+.speech_btn:hover {
+	background: #1B6D85;
+}
+/* 发表言论层 -清除浮动*/
+.pzone_speech:after {
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+/*言论内容大层*/
+#pzone_box {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 60px;
+}
+/*言论内容 头部*/
+.pzone_context_head {
+	width: 100%;
+	height: 6%;
+	margin-bottom: 1px;
+	background: #f8f6f2;
+	line-height: 42px;
+	box-shadow: 0px 0px 2px #FFFFFF;
+}
+/*言论内容头部超链接样式*/
+.pzone_context_head a {
+	text-decoration: none;
+}
+/*言论内容查看的时间范围*/
+.pzone_context_head .select {
+	margin-left: 100px;
+}
+/*时间范围下拉框*/
+.pzone_context_head select {
+	margin-left: 4%;
+	border: none;
+	background: none;
+	outline: none;
+}
+/*刷新*/
+.pzone_context_head .update {
+	float: right;
+	margin-right: 4%;
+}
+/*言论内容*/
+.pzone_context {
+	width: 100%;
+	height: 94%;
+	background: #f8f6f2;
+	box-shadow: 0px 0px 2px #FFFFFF;
+}
+/*每条言论的通用样式*/
+.pzone_context .context_div {
+	padding: 0px 18px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	border-top: 1px solid #D6E9C6;
+}
+/*每条言论的 用户信息层*/
+.essay_user{
+	position: relative;
+}
+/*言论发表人头像*/
+.essay_user .essay_user_img {
+	width: 40px;
+	height: 40px;
+}
+/*言论发表人头像*/
+.essay_user_img img {
+	box-shadow: 1px 1px 2px;
+	border-radius: 25px;
+}
+/*言论发布人名称*/
+.essay_user .essay_user_name{
+	position: absolute;
+	top: 0px;
+	left: 48px;
+}
+/*发表言论的时间*/
+.essay_user .essay_time{
+	position: absolute;
+	top: 22px;
+	left: 48px;
+	color: #999999;
+}
+/*言论内容中的部门类别*/
+.essay_user .essay_user_department{
+	border: 1px solid #269ABC;
+	padding-left: 6px;
+	padding-right: 6px;
+	color: #269ABC;
+	font-size: 8px;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+}
+/*文章的操作*/
+.essay_user .essay_operating{
+	border: none;
+	background: none;
+	outline: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+/*文章内容*/
+.essay_context{
+	padding: 5px 16px;
+}
+/*文章的选项-如评论*/
+.essay_option{
+	position: relative;
+}
+/*赞*/
+.essay_option #praise{
+	position: absolute;
+	right: 42%;
+}
+/*评论*/
+.essay_option #comment{
+	position: absolute;
+	right: 22%;
+}
+/*转发*/
+.essay_option #forward{
+	position: absolute;
+	right: 2%;
+}
+
+/*清除浮动*/
+#pzone_box:after {
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+/*个人言论内容底部*/
+.pzone_context_bottom{
+	background: #31708F;
+	height: 6px;
+	width: 100%;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+/**************************************修改个人信息界面*****************************************/
+
+.userinfo_set{
+	width: 250px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+

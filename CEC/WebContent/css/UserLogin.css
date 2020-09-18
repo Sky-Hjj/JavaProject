@@ -1,0 +1,120 @@
+/*整体网页布局*/
+.wholePage{
+	margin: 0 auto;
+	width:1920px;
+    min-width:1024px;
+    max-width:100%;   /*设置整体布局，使缩放鼠标不改变网页样式*/
+	display: block;
+}
+/*页面标题css*/
+.wholePage .page_title{
+	margin-top: 80px;
+	text-align: center;
+}
+.page_title span{
+	font-size: 30px;
+	color: #fff;
+}
+/*登录层css*/
+.wholePage .login{
+	height: 450px;
+	width: 520px;
+	background-color: #fff;
+	margin: 0 auto ;
+	margin-top: 60px;
+	box-shadow:0 1px 30px 0 rgba(0,34,77,.3);/*设置边框阴影*/
+	border-radius: 15px;
+}
+/*输入框样式*/
+#txtID{
+	height: 30px;
+	width: 200px;
+	border: none;
+	border-bottom: 1px solid #B03060;
+	margin-left: 125px;
+	padding-top: 80px;
+		
+}
+/*密码框样式*/
+#txtPwd{
+	height: 30px;
+	width: 200px;
+	border: none;
+	border-bottom: 1px solid #B03060;
+	margin-left: 125px;
+	padding-top: 60px;
+}
+/*密码是否记住css*/
+#checkbox{
+	display: block;
+	margin-left: 125px;
+	margin-top: 50px;
+}
+#rememberPwd{
+	display: block;
+	margin-left: 155px;
+	margin-top: -18px;
+	font-size: 12px;
+	color: #B03060;
+	cursor: default;
+}
+/*自动登录css*/
+#checkboxTwo{
+	display: block;
+	float: right;
+	margin-right: 185px;
+	margin-top: -15px;
+}
+#loginAutomatic{
+	display: block;
+	float: right;
+	margin-right: -80px;
+	margin-top: -18px;
+	font-size: 12px;
+	color: #B03060;
+	cursor: default;
+}
+/*确认登录按钮css*/
+#OKBtn{
+	margin-top:50px;
+	margin-left: 170px;
+	height: 30px;
+	width: 110px;
+	border: none;
+	background-color: #B03060;
+	border-radius: 15px;
+	color: #fff;
+	cursor: pointer;
+	transform: scale(1);
+    transition: all 0.5s ease 0s;
+}
+#OKBtn:hover{
+	transform: scale(1.2);
+    transition: all 0.5s ease 0s;
+}
+/*跳转页面css*/
+.wholePage #dump{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+	width: 160px;
+}
+#dumpBtn{
+	height: 30px;
+	width: 160px;
+	background-color: #fff;
+	border: none;
+	border-radius: 15px;
+    box-shadow:0 1px 30px 0 rgba(0,34,77,.3);/*设置边框阴影*/
+    color: #B03060;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+}
+#dumpBtn:hover{
+	transform: scale(1.2);
+    transition: all 0.5s ease 0s;
+}

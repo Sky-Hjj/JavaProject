@@ -1,0 +1,147 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*图片铺满屏幕*/
+
+body {
+	background-color: #eee;
+}
+
+
+/*页面头部分*/
+
+.head {
+	height: 60px;
+	border-bottom: 1px solid #CEA861;
+}
+
+
+/*头部链接*/
+
+.head-href {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 60px;
+	transition: all 0.5s ease 0s;
+}
+
+.head-href:hover {
+	background-color: #E0E2E2;
+	transition: all 0.5s ease 0s;
+}
+
+.head-href a {
+	color: #CEA861;
+}
+
+
+/*头部中间层*/
+
+.head-middle {
+	height: 60px;
+	width: 660px;
+	margin: 0 auto;
+	margin-top: -60px;
+	line-height: 60px;
+}
+
+
+/*头部内容*/
+
+.head-context {
+	font-weight: bold;
+	color: #495057;
+}
+
+
+/*页面中间层*/
+
+.middle {
+	/*border: 1px solid red;*/
+}
+
+
+/*form表单*/
+
+.forms {
+	width: 660px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	/*border: 1px solid red;*/
+}
+
+
+/*帖子标题*/
+
+.post-title {
+	width: 660px;
+	height: 62px;
+	border: none;
+	border-bottom: 2px solid #CEA861;
+	margin-top: 20px;
+	font-size: 32px;
+	font-weight: bold;
+	background-color: #EEEEEE;
+	overflow: auto;
+	color: #333;
+}
+
+
+/*placehoder颜色更改*/
+
+input::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #9D9D9D;
+}
+
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #9D9D9D;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #9D9D9D;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #9D9D9D;
+}
+/*帖子内容输入*/
+.post-context{
+	border: none;
+	margin-top: 20px;
+	resize: none;/*文本框禁止拉伸*/
+	font-size: 18px;
+	color: #495057;
+	background-color: #EEEEEE;
+}
+/*提交按钮*/
+.post-btn{
+	height: 30px;
+	width: 100px;
+	margin-top: 30px;
+	margin-left: 280px;
+	cursor: pointer;
+	border: 2px solid #CEA861;
+	color: #CEA861;
+	font-weight: bold;
+	transition: all 0.5s ease 0s;
+}
+.post-btn:hover{
+	background-color: #CEA861;
+	color: #fff;
+	transition: all 0.5s ease 0s;
+}
