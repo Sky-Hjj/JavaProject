@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin: 0;
+	padding:0;
+}
+
+
+/*---------------以下是header部分---------------*/
+
+/*---------------以下是container部分---------------*/
+
+/*正文外面的大层的样式*/
+.content{
+	width: 1024px;
+	margin: auto;
+	background-color: #fff;
+	border: 3px solid #F00;
+	}
+/*把正文中三个层的相同样式写在一起，并列样式*/
+.content .left,.content .middle,.content .right{
+	float: left;
+	height:auto;
+	margin-left: 10px;
+	border: 3px solid #CCC;
+}
+
+/*中间层样式*/
+.content .middle{
+	width: 1018px;
+	margin: 0 auto;
+	background: #FFF;
+	border: 3px solid #CCC;
+}
+
+/*清除浮动标准写法*/
+.content:after{
+	content:"";
+	display:block;
+	clear:both;
+	overflow:hidden;}	
+
+/*正文左边样式*/
+.content .left div{
+	width: 130px;
+	height: 100%px;
+	margin: 40px;
+	background-color: #FFF;
+    font-weight: bold;
+}
+.content .left div a{
+	color:#000;}
+.content .left div a:hover{
+	color: #F00;
+	font-size: 18px;
+	padding: 10px;
+}
+.left-title {
+	background-color: #F00;
+	font-size: 25px;
+	/*高度和行高保持一致可以实现文字垂直居中
+	只对一行文字有效*/
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 10px;
+	padding-left: 10px;
+	font-weight: 900;
+	
+}
+
+/*正文中间畅销商品的图片大小*/
+.content .middle .salegoods img{
+	width: 150px;
+	height: 180px;
+	border: 2px solid #F33;
+	margin: 0px;
+	padding: 0px;
+}	
+/*正文中间每栏的标题样式*/
+.content .middle .title{
+	background-color: #F00;
+	font-size: 25px;
+	/*高度和行高保持一致可以实现文字垂直居中
+	只对一行文字有效*/
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 10px;
+	padding-left: 20px;
+	font-weight: 900;
+}
+	
+/*设置单个畅销商品的样式*/
+.content .middle .salegoods dl{
+	float:left;/*将商品往左边浮动起来*/
+	width:156px;
+	margin-left:35px;/*(700-150*4-2*4)/5*/
+	margin-top:15px;}
+	
+/*设置所有商品的描述*/
+.content .middle a{
+	text-decoration: none;/*去掉下划线*/
+	font-size: 16px;
+	color: #333;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:4;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	
+}
+.content .middle a:hover{color:#00F;}
+.content .middle a .disc{
+	display: block;/*将span设置成块级元素*/
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+/*设置所有商品的价格样式：文字是红色，斜体，加粗，居中*/
+.content .middle .price{
+	display: block;
+	width: 150px;
+	text-align: left;
+	text-align: center;
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0px;
+}
+
+/*要清除浮动,每一栏目结束都要清除浮动*/
+.content .middle .salegoods:after,.content .middle .newgoods:after{
+	content:"";
+	display:block;
+	clear:both;
+	overflow:hidden;}
+
+/*实现新品上市的图片的大小设置*/
+.content .middle .newgoods img{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #F69;
+	margin: 0px;
+}
+	
+/*实现新品上市的单个商品的样式*/
+.content .middle .newgoods dl{
+	float:left;/*都要浮动*/
+	width:204px;
+	margin-left:48px;
+	margin-top:10px;
+
+}
+/*---------------以下是footer部分---------------*/
+

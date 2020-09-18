@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin: 0;
+	padding:0;
+}
+
+
+/*---------------以下是header部分---------------*/
+
+
+#header {
+	hright:auto;
+	width: 1024px;
+	padding-bottom: 6px;
+	background: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #F00;
+}
+#header .logo-container {
+  float: left;
+  margin: 40px 0 0 5px;
+}
+#header .header-top {
+  height: 150px;
+  padding-bottom: 20px;
+}
+#header .header-nav {
+	width: 640px;
+	height: 40px;
+	float: right;
+	margin-top: 40px;
+	position:relative;
+}
+a:hover{
+	color: #F00;
+	font-weight: bold;
+}
+.header-nav > ul > li {
+  float: left;
+  width: 106px;
+  text-align: center;
+  color: #000;
+  line-height: 38px;
+}
+.header-nav ul li a {
+	color: #000;
+	font-weight: bold;
+}
+.header-nav ul li a:hover{color:#F00;
+font-size:18px;}
+li{list-style:none;}
+a{ text-decoration:none;}
+
+.header-nav ul li ul li a {
+	color: #333;
+	border: 2px solid #CCC;
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #FFF;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+#header .seek{
+	height: 30px;
+	width: 400px;
+	float: left;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 50px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-color: #F00;
+	border-right-color: #F00;
+	border-bottom-color: #F00;
+	border-left-color: #F00;
+	}
+#header .img{
+	float: left;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	}
+
+/**/
+
+
+/*---------------以下是container部分---------------*/
+/*图片轮播*/
+* {
+		padding: 0px;
+		margin: 0px;
+	}
+	a {
+		text-decoration: none;
+	}
+	ul {
+		list-style: outside none none;
+	}
+	.slider, .slider-panel img, .slider-extra {
+		width: 790px;
+		height: 420px;
+		
+		
+	}
+	.slider {
+		text-align: center;
+		margin: 10px auto;
+		position: relative;
+	}
+	.slider-panel, .slider-nav, .slider-pre, .slider-next {
+		position: absolute;
+		z-index: 8;
+	}
+	.slider-panel {
+		position: absolute;
+	}
+	.slider-panel img {
+		border: none;
+	}
+	.slider-extra {
+		position: relative;
+	}
+	.slider-nav {
+		position: absolute;
+		left: 40%;
+		bottom: 4px;
+	}
+	.slider-nav li {
+		background: #3e3e3e;
+		border-radius: 50%;
+		color: #fff;
+		cursor: pointer;
+		margin: 0 2px;
+		overflow: hidden;
+		text-align: center;
+		display: inline-block;
+		height: 18px;
+		line-height: 18px;
+		width: 18px;
+	}
+	.slider-nav .slider-item-selected {
+		background: blue;
+	}
+	.slider-page a{
+		background: rgba(0, 0, 0, 0.2);
+		color: #fff;
+		text-align: center;
+		display: block;
+		font-family: "simsun";
+		font-size: 22px;
+		width: 28px;
+		height: 62px;
+		line-height: 62px;
+		margin-top: -31px;
+		position: absolute;
+		top: 50%;
+	}
+	.slider-page a:HOVER {
+		background: rgba(0, 0, 0, 0.4);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+	}
+	.slider-next {
+		left: 100%;
+		margin-left: -28px;
+	}
+
+/*正文外面的大层的样式*/
+.content{
+	margin-left: 10px;
+	height:100%;
+	margin:  auto;
+	background-color: #FFF;
+	
+	}
+/*把正文中三个层的相同样式写在一起，并列样式*/
+.content .left,.content .middle,.content .right{
+	float: left;
+	height:2160px;
+	margin-left: 10px;
+	border: 3px solid #CCC;
+}
+
+/*中间层样式*/
+.content .middle{
+	width: 790px;
+	margin: 0 auto;
+	background: #FFF;
+	border: 3px solid #CCC;
+}
+
+/*清除浮动标准写法*/
+.content:after{
+	content:"";
+	display:block;
+	clear:both;
+	overflow:hidden;}	
+
+/*正文左边样式*/
+.content .left div{
+	width: 130px;
+	height: 100%px;
+	margin: 40px;
+	background-color: #FFF;
+    font-weight: bold;
+}
+.content .left div a{
+	color:#000;}
+.content .left div a:hover{
+	color: #F00;
+	font-size: 18px;
+	padding: 10px;
+}
+.left-title {
+	background-color: #F00;
+	font-size: 25px;
+	/*高度和行高保持一致可以实现文字垂直居中
+	只对一行文字有效*/
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 10px;
+	padding-left: 10px;
+	font-weight: 900;
+	
+}
+
+/*正文中间畅销商品的图片大小*/
+.content .middle .salegoods img{
+	width: 150px;
+	height: 180px;
+	border: 2px solid #F33;
+	margin: 0px;
+	padding: 0px;
+}	
+/*正文中间每栏的标题样式*/
+.content .middle .title{
+	background-color: #F00;
+	font-size: 25px;
+	/*高度和行高保持一致可以实现文字垂直居中
+	只对一行文字有效*/
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 10px;
+	padding-left: 20px;
+	font-weight: 900;
+}
+	
+/*设置单个畅销商品的样式*/
+.content .middle .salegoods dl{
+	float:left;/*将商品往左边浮动起来*/
+	width:156px;
+	margin-left:35px;/*(700-150*4-2*4)/5*/
+	margin-top:15px;}
+	
+/*设置所有商品的描述*/
+.content .middle a{
+	text-decoration: none;/*去掉下划线*/
+	font-size: 16px;
+	color: #333;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:4;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	
+}
+.content .middle a:hover{color:#00F;}
+.content .middle a .disc{
+	display: block;/*将span设置成块级元素*/
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+/*设置所有商品的价格样式：文字是红色，斜体，加粗，居中*/
+.content .middle .price{
+	display: block;
+	width: 150px;
+	text-align: left;
+	text-align: center;
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0px;
+}
+
+/*要清除浮动,每一栏目结束都要清除浮动*/
+.content .middle .salegoods:after,.content .middle .newgoods:after{
+	content:"";
+	display:block;
+	clear:both;
+	overflow:hidden;}
+
+/*实现新品上市的图片的大小设置*/
+.content .middle .newgoods img{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #F69;
+	margin: 0px;
+}
+	
+/*实现新品上市的单个商品的样式*/
+.content .middle .newgoods dl{
+	float:left;/*都要浮动*/
+	width:204px;
+	margin-left:48px;
+	margin-top:10px;
+
+}
+
+
+
+
+/*---------------以下是footer部分---------------*/
+
+
+#footer {
+	width: 1024px;
+	margin: auto;
+	padding: 25px 0 35px 0;
+
+
+  background-color:;
+	color: #000;
+	overflow: hidden;
+	border: 3px solid #F00;
+}
+#footer .footer-logo {
+	font-size: 36px;
+
+
+
+
+  bold
+  line-height: 1em;
+	margin: 0 110px 0 220px;
+	float: left;
+	font-weight: 900;
+  
+}
+.company-info dd {
+  float: left;
+  margin: 5px 25px 0 0;
+}

@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*---------------以下是header部分---------------*/
+
+/*---------------以下是container部分---------------*/
+#container {
+  width: 1024px;
+  height:auto;
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #F00
+}
+
+.title {
+	background-color: #F00;
+	font-size: 18px;
+	/*高度和行高保持一致可以实现文字垂直居中
+	只对一行文字有效*/
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 10px;
+	padding-left: 10px;
+	font-weight: 900;
+	padding-top: 10px;
+}
+ 
+table{    
+    border-top: 1px solid #333;    
+    border-left: 1px solid #333;    
+    width:1000px;  
+	margin:10px; 
+}    
+td{  
+  
+    border-right: 1px solid #333;    
+    border-bottom: 1px solid #333;    
+    text-align:center;    
+    }    
+.title{
+	font-weight: bold;
+	background-color: #FF0000;
+}    
+input text{    
+    width:100px;    
+}    
+/*---------------以下是footer部分---------------*/
+
+
+

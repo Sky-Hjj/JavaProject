@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+
+
+/*---------------以下是header部分---------------*/
+
+
+#header {
+	width: 1024px;
+	padding-bottom: 6px;
+	background: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #F00;
+}
+#header .logo-container {
+  float: left;
+  margin: 10px 0 0 5px;
+}
+#header .header-top {
+  height: 150px;
+  padding-bottom: 20px;
+}
+#header .header-nav {
+	width: 640px;
+	height: 40px;
+	float: right;
+	margin-top: 40px;
+	position:relative;
+	z-index:1;
+}
+a:hover{
+	color: #F00;
+	font-weight: bold;
+}
+.header-nav > ul > li {
+  float: left;
+  width: 106px;
+  text-align: center;
+  color: #000;
+  line-height: 38px;
+}
+.header-nav ul li a {
+	color: #000;
+	font-weight: bold;
+}
+.header-nav ul li a:hover{color:#F00;
+font-size:18px;}
+li{list-style:none;}
+a{ text-decoration:none;}
+
+.header-nav ul li ul li a {
+	color: #333;
+	border: 2px solid #CCC;
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #FFF;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+#header .seek{
+	height: 30px;
+	width: 400px;
+	float: left;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 50px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-color: #F00;
+	border-right-color: #F00;
+	border-bottom-color: #F00;
+	border-left-color: #F00;
+	}
+#header .img{
+	float: left;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	}	
+
+/**/
+
+
+
+/*---------------以下是container部分---------------*/
+
+
+
+
+/*---------------以下是footer部分---------------*/
+
+
+#footer {
+  width: 1024px;
+  margin: auto;
+  padding: 25px 0 35px 0;
+  background-color:;
+  color:#000;
+  overflow: hidden;
+  border: 3px solid #F00;
+}
+#footer .footer-logo {
+	font-size: 36px;
+	line-height: 1em;
+	margin: 0 110px 0 220px;
+	float: left;
+	font-weight: 900;
+}
+.company-info dd {
+  float: left;
+  margin: 5px 25px 0 0;
+}

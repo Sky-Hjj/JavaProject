@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+
+
+/*---------------以下是header部分---------------*/
+
+
+
+
+/*---------------以下是container部分---------------*/
+#container {
+	width: 1024px;
+	margin: auto;
+	padding-bottom: 30px;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+	border: 3px solid #F00
+}
+.regist-con {
+  margin-top: 100px;
+}
+.regist-con fieldset {
+  border: 1px solid #ccc;
+  width: 851px;
+  margin: 0 auto 50px;
+  padding-bottom: 63px;
+}
+.regist-con fieldset legend {
+  margin-left: 20px;
+  font-size:36px;
+}
+.regist-con .regist-cont {
+  font-size: 18px;
+  margin-top: 60px;
+}
+.regist-cont li {
+  width: 390px;
+  margin-left: 250px;
+  margin-bottom: 35px;
+}
+
+.regist-cont li dl dd input {
+  width: 211px;
+  height: 27px;
+  font-size: 13px;
+  
+}
+
+.btn-regist {
+	
+  padding-left: 250px;
+  margin-bottom: 22px;
+}
+.login-direct {
+  padding-left: 400px;
+}
+
+
+
+/*---------------以下是footer部分---------------*/
+
+
+#footer {
+	width: 1024px;
+	margin: auto;
+	padding: 25px 0 35px 0;
+
+  background-color:;
+	color: #000;
+	overflow: hidden;
+	border: 3px solid #F00;
+}
+#footer .footer-logo {
+	font-size: 36px;
+	line-height: 1em;
+	margin: 0 110px 0 220px;
+	float: left;
+	font-weight: 900;
+}
+.company-info dd {
+  float: left;
+  margin: 5px 25px 0 0;
+}
+

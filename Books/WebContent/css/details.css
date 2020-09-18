@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*---------------以下是header部分---------------*/
+
+
+#header {
+	width: 1024px;
+	padding-bottom: 6px;
+	background: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #F00;
+}
+#header .logo-container {
+  float: left;
+  margin: 40px 0 0 5px;
+}
+#header .header-top {
+  height: 150px;
+  padding-bottom: 20px;
+}
+#header .header-nav {
+	width: 640px;
+	height: 40px;
+	float: right;
+	margin-top: 40px;
+	position:relative;
+	z-index:1;
+}
+a:hover{
+	color: #F00;
+	font-weight: bold;
+}
+.header-nav > ul > li {
+  float: left;
+  width: 106px;
+  text-align: center;
+  color: #000;
+  line-height: 38px;
+}
+.header-nav ul li a {
+	color: #000;
+	font-weight: bold;
+}
+.header-nav ul li a:hover{color:#F00;
+font-size:22px;}
+li{list-style:none;}
+a{ text-decoration:none;}
+
+.header-nav ul li ul li a {
+	color: #333;
+	border: 2px solid #CCC;
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #FFF;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}	/*---------------以下是container部分---------------*/
+#container {
+  width: 1024px;
+  height:100%;
+  margin: auto;
+  padding-bottom: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #F00
+}
+
+.title {
+	background-color: #F00;
+	font-size: 25px;
+	/*高度和行高保持一致可以实现文字垂直居中
+	只对一行文字有效*/
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 10px;
+	padding-left: 10px;
+	font-weight: 900;
+	padding-top: 10px;
+}
+.images {
+	background-color: #FFF;
+	margin: 30px;
+	border: 5px solid #F63;
+	float:left;
+}
+.content-title {
+	float: left;
+	margin: 30px;
+	font-size: 36px;
+	height: 200px;
+	width: 380px;
+}
+.price {
+	float: left;
+	margin: 30px;
+	font-size: 36px;
+	color: #F00;
+}
+.introduce-title {
+	font-size: 24px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+.btu {
+	color: #000;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.introduce-images{
+	text-align:center;
+	}
+.content .middle .salegoods:after,.content .middle .newgoods:after{
+	content:"";
+	display:block;
+	clear:both;
+	overflow:hidden;}
+/*---------------以下是footer部分---------------*/
+
+
+#footer {
+  width: 1024px;
+  margin: auto;
+  padding: 25px 0 35px 0;
+  background-color:;
+  color:#000;
+  overflow: hidden;
+  border: 3px solid #F00;
+}
+#footer .footer-logo {
+  font-size: 36px;
+  line-height: 1em;
+  margin: 0 110px 0 220px;
+  float: left;
+}
+.company-info dd {
+  float: left;
+  margin: 5px 25px 0 0;
+}
